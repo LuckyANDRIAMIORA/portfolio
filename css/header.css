@@ -1,0 +1,124 @@
+.logo{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.dropdown{
+    display: block;
+    text-align: center;
+}
+
+.dropdown-button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0 0 16px 0;
+    z-index: 1;
+}
+
+.navbar{
+    background-color:  rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.navlist{
+    display: none;
+}
+
+.navlink{
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.dropdown-link{
+    color:white;
+    display: block;
+    margin: 0;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.navlink:hover, .dropdown-button:hover, .dropdown-link:hover{
+    background-color: darkcyan;
+    border: 1px solid white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    right: 0;
+}
+
+.dropdown-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (min-width:283px){
+    .logo{
+        display: block;
+        padding: 20px;
+        position: relative; 
+        float: left;
+    }
+    
+    .dropdown{
+        display: block;
+        position: relative; 
+        float: right;
+    }
+
+    .dropdown-button{
+        padding: 15px;
+        width: auto;
+        margin: 6px;
+        border-radius: 12px;
+    }        
+    
+}
+
+@media only screen and (min-width:768px){
+
+    .logo{
+        display: block;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navlist{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: block;
+    }    
+    
+    .dropdown{
+        display: none;
+    }
+}
