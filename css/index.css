@@ -1,3 +1,10 @@
+:root{
+    --font-size : 8px;
+    --color-1 :  rgba(0, 0, 0, 0.8);
+    --color-2 : white;
+    --color-3 : cadetblue;
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -5,13 +12,63 @@ html, body{
 
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans';   
 }
 
 [class*="col-"]{
     width:100%;
+    float: left;
 }
 
-@media only screen and (min-width:768px){
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr{
+    color: var(--color-3)
+}
+
+.attribution{
+    text-align: center;
+}
+
+footer{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    margin-top: 10%;
+    font-size: calc(var(--font-size));
+
+}
+
+.content{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+li{
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+footer p {
+    color: var(--color-2);
+}
+
+@media only screen and (min-width:1024px){
+    :root{
+        --font-size : 9px;
+    }    
     
     .col-1{
         width: 8.33%;
@@ -49,34 +106,5 @@ html, body{
     .col-12{
         width: 100%;
     }    
-    
-}
-
-[class*="col-"]{
-    float: left;
-}
-
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.section-title{
-    text-align: center;
-}
-
-hr{
-    color: darkcyan;
-    width: 70%;
-}
-
-.attribution{
-    text-align: center;
-}
-
-.icones{
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
+        
 }
