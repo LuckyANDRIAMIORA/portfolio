@@ -1,72 +1,23 @@
-#social-media-links{
-    text-align: center;
-}
-
-.icones{
-    width: 40px;
-    height: 40px;
+#my-photo {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
     border-radius: 100%;
 }
 
-#about-section{
-    background-color: var(--color-2);
-    text-align: center;
+#description {
+    margin-left: 20px;
 }
 
-#about-section h1 {
-    color: var(--color-3);
-    font-size: calc(2.5*var(--font-size));
+#social-media {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-#about-section h2 {
-    color: var(--color-1);
-    font-size: calc(2*var(--font-size));
+#social-media li {
+    margin-right: 5px;
 }
 
-#about-section p {
-    color: var(--color-1);
-    font-size: calc(1.5*var(--font-size));
-    opacity: 0.8;
-}
-
-#profile{
-    width: 80%;
-    height: 80%;
-    padding: 0;
-    margin-bottom: 2rem;
-    border-radius: 45%;
-}
-
-#profile-container{
-    text-align: center;
-}
-
-#profile-description{
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
-@media only screen and (min-width:1024px){
-
-    .icones{
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-    }
-
-    #profile{
-        width: 220px;
-        height: 270px;
-    }
-        
-}
-
-@media only screen and (min-width:283px){
-    #profile{
-        width: 190px;
-        height: 240px;
-    }
-        
+#profile-container {
+    display: flex;
 }

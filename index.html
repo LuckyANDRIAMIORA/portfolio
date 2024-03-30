@@ -1,108 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Ainamalala Lucky | portfolio</title>
     <meta charset="UTF-8">
     <meta name="description" content="portfolio of Lucky, a junior software engineer">
     <meta name="author" content="Ainamalala Lucky">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/hero_section.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
+
 <body>
-    <nav class="navbar row">    
-        <div class="col-4">
-            <div class="logo">
-                <a id="logo" href="#">
-                    LUCKY
-                </a>
-            </div>   
-            <div class="dropdown">
-                <button class="dropdown-button">
-                   MENU 
-                </button>
-                <div class="dropdown-content">
-                    <ul class="dropdown-list">
-                        <li>
-                            <a href="#about" class="dropdown-link">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-link">SKILLS</a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-link">PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-link">CONTACTS</a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-link">RESUME</a>
-                        </li>
-                    </ul>            
-                </div>
-            </div>    
-        </div>
-        <ul class="navlist col-8">
-            <li class="col-2">
-                <a href="#about" class="navlink">ABOUT</a>
-            </li>
-            <li class="col-2">
-                <a href="#" class="navlink">SKILLS</a>
-            </li>
-            <li class="col-2">
-                <a href="#" class="navlink">PROJECTS</a>
-            </li>
-            <li class="col-2">
-                <a href="#" class="navlink">CONTACTS</a>
-            </li>
-            <li class="col-2">
-                <a href="#" class="navlink">RESUME</a>
-            </li>
+    <nav>
+        <ul class="flex-container navList">
+            <li><a href="#">about</a>/</li>
+            <li><a href="#achievements">achievements</a>/</li>
+            <li><a href="#">skills</a>/</li>
         </ul>
     </nav>
-    
-    <section id="hero-section">
-        <div id="hello-section" class="row">
-            <h1>Ainamalala Lucky</h1>
-            <h2>Junior Software Engineer</h2>
-            <div id="resume-button" class="row">
-                <button>DOWNLOAD RESUME</button>
-            </div>    
-        </div>
-    </section>
-    <section id="about-section" class="content">
-        <div class="row" id="social-media-links">
-            <h1>Social Media</h1>
-            <div class="row">
-                <a href="https://web.facebook.com/lucky.andriyaina.73">
-                    <img class="icones" src="img/facebook.png" alt="facebook">
-                </a>
-                <a href="https://www.linkedin.com/in/lucky-ainamalala-9b8344213/">
-                    <img class="icones" src="img/linkedin.png" alt="linkedin">
-                </a>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="row" id="profile-container">   
-                <h1  id="about">About Me</h1>
-                <img id="profile" src="img/Lucky.jpg" alt="Lucky's profile">
-                <h2>I want to generate positive impact on people's life using my knowledg</h2>
-                <div class="row" id="profile-description">
-                    <p>I study <strong>Computer Science</strong> at <a href="https://eni.mg/">ENI Fianarantsoa</a>, and currently working towards my Master degree.
-                        Passionate about Science and technology my interest include <strong>Software Design and Development</strong>, which is my main focus right now specificaly <strong>web and mobile development</strong>.
-                        Eager and devoted to learn more I'm still exploring the field of Data Science, Artificial Inteligence and Machine learning. I'm also itrigued by Algorithms and Theory of computation.   
+
+    <section id="content">
+        <section id="about">
+            <div id="profile-container">
+                <div id="profile">
+                    <img src="./img/Lucky_1.jpg" alt="My photo" id="my-photo">
+                </div>
+                <div id="description">
+                    <h1>
+                        About me
+                    </h1>
+                    <p>
+                        Hi i'm Lucky, a <strong>junior software engineer</strong> graduated from ENI Fianarantsoa.
+                        I enjoy tackling problems through programming,
+                        whether by implementing algorithms or by developing web and mobile applications.
+                        I'm exited to contribute to meaningful projects and being able to make positive impact.
                     </p>
+                    <ul class="flex-container" id="social-media">
+                        <li><a href="">GitHub</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
+        <hr id="achievements">
+        <section>
+            <h1>Achievements</h1>
+            <h2>Education</h2>
+            <ul>
+                <li>2023 - present : Master 2 in computer science engineering </li>
+                <li>2021 - 2022 : Bachelor's degree in computer science engineering</li>
+                <li>2018 - 2019 : "Baccalauréat série D"</li>
+            </ul>
+        </section>
     </section>
-    <footer>
-        <p class="attribution">background-image from <a href="https://unsplash.com/fr/@hishahadat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shahadat Rahman</a> on <a href="https://unsplash.com/fr/photos/allume-sur-le-moniteur-affichant-la-fonction-digital_best_reviews-gnyA8vd3Otc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </p>
-        <p class="attribution"><a href="https://www.flaticon.com/fr/icones-gratuites/facebook" title="facebook icônes">Facebook icones</a> and <a href="https://www.flaticon.com/fr/icones-gratuites/linkedin" title="linkedin icônes">linkedin icônes</a> creted by Enamo Studios - Flaticon</p>
-    </footer>   
 </body>
+
 </html>

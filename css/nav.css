@@ -1,0 +1,16 @@
+.navList {
+    list-style-type: none;
+    padding-left: 0;
+}   
+
+.navList li{
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-1);
+}
