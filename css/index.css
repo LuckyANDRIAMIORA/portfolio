@@ -1,76 +1,122 @@
 :root {
     --font-size: 14px;
     --color-1: white;
-    --color-2: #3a2b2b;
-    --color-3: rgb(82, 64, 40);
+    --color-2: rgb(250, 0, 250);
+    --color-3: rgb(60, 60, 60);
 }
 
-html {
+html,
+body {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    min-width: fit-content;
     margin: 0;
     padding: 0;
-    font-size: var(--font-size);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    color: var(--color-2);
+    font-size: var(--font-size);    
+    font-family: "__GeistSans_Fallback_ac79ff";
 }
 
 body {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    display: flex;
-}
-
-@media screen and (min-width:1024px) {
-    body {
-        max-width: 65rem;
-    }
+    background-color: var(--color-1);
+    color: var(--color-3);
 }
 
 * {
     box-sizing: border-box;
 }
 
-.flex-container {
+.list-container {
     display: flex;
     width: 100%;
 }
 
-#content {
-    margin-top: 50px;
+.container {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    flex: 1;
+    padding: 40px;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
 }
 
 h2 {
     font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
 }
 
-a,
-p,
-li {
+h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
     font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }
 
 a,
-hr,
 p,
 li {
+    font-size: 1.15rem;
+}
+
+a {
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: static;
+    bottom: 0;
+    background-color: var(--color-1);
+}
+
+footer * {
     color: var(--color-3);
 }
 
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+@media only screen and (min-width: 1024px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    h1 {
+        font-size: 2.9rem;
+    }       
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+    }
+
+    a,
+    p,
+    li {
+        font-size: 2.3rem;
+    }
 }
