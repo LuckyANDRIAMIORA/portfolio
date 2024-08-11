@@ -1,10 +1,10 @@
 :root {
     --font-size: 14px;
     --color-1: white;
-    --color-2: rgb(250, 0, 250);
-    --color-3: rgb(60, 60, 60);
+    --color-2: #00A4D4;
+    --color-3: rgb(80, 80, 80);
 }
-
+    
 html,
 body {
     display: flex;
@@ -34,9 +34,9 @@ body {
 
 .container {
     display: flex;
+    min-height: 70vh;
     margin: 0;
     width: 100%;
-    min-height: 100vh;
     flex: 1;
     padding: 40px;
 }
@@ -47,29 +47,10 @@ h1 {
     padding: 0;
 }
 
-h2 {
-    font-size: 1.4rem;
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0;
-}
-
-h4 {
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
 a,
 p,
 li {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
 }
 
 a {
@@ -83,7 +64,6 @@ footer {
     justify-content: center;
     position: static;
     bottom: 0;
-    background-color: var(--color-1);
 }
 
 footer * {
@@ -92,25 +72,21 @@ footer * {
 
 @media only screen and (min-width: 1024px) {
     body {
-        margin-left: 15%;
-        margin-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
 @media only screen and (min-width: 2560px) {
     h1 {
-        font-size: 2.9rem;
+        font-size: 2.5rem;
     }       
 
     h2 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 
     h3 {
-        font-size: 2.5rem;
-    }
-
-    h4 {
         font-size: 2.4rem;
     }
 
